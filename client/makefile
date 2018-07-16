@@ -6,3 +6,5 @@ client_func.o:
 	g++ -c client_func.c -o client_func.o
 packet.o:
 	g++ -c packet.c -o packet.o
+clean:
+	rm -f *.o client *~
