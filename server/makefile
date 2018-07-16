@@ -8,3 +8,5 @@ thread.o: server_func.o packet.o
 	g++ -c thread.c -o thread.o
 server.o: thread.o server_func.o packet.o
 	g++ -lpthread -c server.c -o server.o
+clean:
+	rm -r server *.o *~
